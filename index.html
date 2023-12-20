@@ -5,19 +5,21 @@
 <h1>King & Prince</h1>
 <p>serach for songs</p>
 
-<button type="button" onclick="myFunctionSingle()">検索</button>
-<button type="reset">リセット</button>
+<button type="button" onclick="myFunction()">検索</button>
+
+<select id="searchTarg">
+    <option value="Title">Title</option>
+    <option value="Single">Single</option>
+    <option value="Album">Album</option>
+</select>
+
+<input type="text" id="myInputName" onclick="myFunction()" placeholder="Search for Names..">
 
 <table id="songTable">
   <tr>
     <th>Title</th>
     <th>Single</th>
     <th>Album</th>
-  </tr>
-  <tr>
-    <td><input type="text" id="myInputTitle" onkeyup="myFunctionTitle()" placeholder="Search for TitleNames.."></td>
-    <td><input type="text" id="myInputSingle" placeholder="Search for SingleNames.."></td>
-    <td><input type="text" id="myInputAlbum" onkeyup="myFunctionAlbum()" placeholder="Search for AlbumNames.."></td>
   </tr>
   <tr>
     <td>シンデレラガール</td>
@@ -414,17 +416,21 @@
 </body>
 
 <script>
-function myFunctionTitle() {
+function myFunction() {
   // Declare variables
-  var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("myInputTitle");
+  var select,input, filter, table, tr, td, i, txtValue;
+  select = document.getElementById("searchTarg").value;
+  input = document.getElementById("myInputName");
   filter = input.value.toUpperCase();
   table = document.getElementById("songTable");
   tr = table.getElementsByTagName("tr");
+  console.log(select);
 
   // Loop through all table rows, and hide those who don't match the search query
   for (i = 1; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
+    if(select == "Title"){td = tr[i].getElementsByTagName("td")[0];}
+    if(select == "Single"){td = tr[i].getElementsByTagName("td")[1];}
+    if(select == "Album"){td = tr[i].getElementsByTagName("td")[2];}
     if (td) {
       txtValue = td.textContent || td.innerText;
       if (txtValue.toUpperCase().indexOf(filter) > -1) {
@@ -436,49 +442,6 @@ function myFunctionTitle() {
   }
 }
 
-function myFunctionSingle() {
-  // Declare variables
-  var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("myInputSingle");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("songTable");
-  tr = table.getElementsByTagName("tr");
-
-  // Loop through all table rows, and hide those who don't match the search query
-  for (i = 1; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[1];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }
-  }
-}
-
-function myFunctionAlbum() {
-  // Declare variables
-  var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("myInputAlbum");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("songTable");
-  tr = table.getElementsByTagName("tr");
-
-  // Loop through all table rows, and hide those who don't match the search query
-  for (i = 1; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[2];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }
-  }
-}
 </script>
 
 </html>
