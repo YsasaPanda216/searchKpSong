@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>King & Prince</h1>
+<p>serach for songs</p>
+
+<table id="songTable">
+  <tr>
+    <th>Title</th>
+    <th>Single</th>
+    <th>Album</th>
+  </tr>
+  <tr>
+    <td><input type="text" id="myInputTitle" onkeyup="myFunctionTitle()" placeholder="Search for TitleNames.."></td>
+    <td><input type="text" id="myInputSingle" onkeyup="myFunctionSingle()" placeholder="Search for SingleNames.."></td>
+    <td><input type="text" id="myInputAlbum" onkeyup="myFunctionAlbum()" placeholder="Search for AlbumNames.."></td>
+  </tr>
+  <tr>
+    <td>シンデレラガール</td>
+    <td>シンデレラガール</td>
+    <td>King & Prince</td>
+  </tr>
+  <tr>
+    <td>Funk it up</td>
+    <td>シンデレラガール</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>YOU, WANTED!</td>
+    <td>シンデレラガール</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Memorial</td>
+    <td>Memorial</td>
+    <td>King & Prince</td>
+  </tr>
+  <tr>
+    <td>High On Love! </td>
+    <td>Memorial</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Glass Flower</td>
+    <td>Memorial</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>愛のすべて</td>
+    <td>Memorial</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Lover's Delight</td>
+    <td>Memorial</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>BEATMAKER</td>
+    <td>Memorial</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>君を待ってる</td>
+    <td>君を待ってる</td>
+    <td>King & Prince</td>
+  </tr>
+  <tr>
+    <td>風に乗れ </td>
+    <td>君を待ってる</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>グッとGood Life</td>
+    <td>君を待ってる</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Wake me up</td>
+    <td>君を待ってる</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>宙（SORA）</td>
+    <td>君を待ってる</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Spark and Spark</td>
+    <td>君を待ってる</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>koi-wazurai </td>
+    <td>koi-wazurai </td>
+    <td>L&</td>
+  </tr>
+  <tr>
+    <td>君は、綺麗だ。</td>
+    <td>koi-wazurai </td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Oh My Girl</td>
+    <td>koi-wazurai </td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>STEAL YOUR NIGHT</td>
+    <td>koi-wazurai </td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Smiling Forever</td>
+    <td>koi-wazurai </td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Mazy Night </td>
+    <td>Mazy Night </td>
+    <td>L&</td>
+  </tr>
+  <tr>
+    <td>ゴールデンアワー</td>
+    <td>Mazy Night </td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Oh My Girl</td>
+    <td>Mazy Night </td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Love Paradox</td>
+    <td>Mazy Night</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>今君に伝えたいこと</td>
+    <td>Mazy Night </td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>I promise </td>
+    <td>I promise </td>
+    <td>Re:Sense</td>
+  </tr>
+  <tr>
+    <td>Winter Love Story</td>
+    <td>I promise </td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Glad to see you</td>
+    <td>I promise </td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Little Christmas</td>
+    <td>I promise</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Happy Holy Night</td>
+    <td>I promise </td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Magic Touch </td>
+    <td>Magic Touch/Beating Hearts </td>
+    <td>Re:Sense</td>
+  </tr>
+  <tr>
+    <td>Beating Hearts </td>
+    <td>Magic Touch/Beating Hearts</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>雨音</td>
+    <td>Magic Touch/Beating Hearts</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Seasons of Love</td>
+    <td>Magic Touch/Beating Hearts</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>恋降る月夜に君想ふ </td>
+    <td>恋降る月夜に君想ふ </td>
+    <td>Made in</td>
+  </tr>
+  <tr>
+    <td>You are my hero </td>
+    <td>恋降る月夜に君想ふ</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Kiss & Cry</td>
+    <td>恋降る月夜に君想ふ</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Easy Go</td>
+    <td>恋降る月夜に君想ふ</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>泣き笑い</td>
+    <td>恋降る月夜に君想ふ</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>NANANA</td>
+    <td>恋降る月夜に君想ふ</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Lovin' you</td>
+    <td>Lovin' you/踊るように人生を。 </td>
+    <td>Made in</td>
+  </tr>
+  <tr>
+    <td>踊るように人生を。 </td>
+    <td>Lovin' you/踊るように人生を。</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>BANGIN!! </td>
+    <td>Lovin' you/踊るように人生を。</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>54321</td>
+    <td>Lovin' you/踊るように人生を。</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>My Sweeties</td>
+    <td>Lovin' you/踊るように人生を。</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Endroll</td>
+    <td>Lovin' you/踊るように人生を。</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>TraceTrace</td>
+    <td>TraceTrace </td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>エスコート </td>
+    <td>TraceTrace</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>My Treasures </td>
+    <td>TraceTrace</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Super Positive!! </td>
+    <td>TraceTrace</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>秋空</td>
+    <td>TraceTrace</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Nothing compares</td>
+    <td>TraceTrace</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>ツキヨミ</td>
+    <td>ツキヨミ/彩り </td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>彩り </td>
+    <td>ツキヨミ/彩り</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>明日は明日の風が吹く</td>
+    <td>ツキヨミ/彩り</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>オモカゲ </td>
+    <td>ツキヨミ/彩り</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>君とメリークリスマス</td>
+    <td>ツキヨミ/彩り</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Misbehave</td>
+    <td>ツキヨミ/彩り</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Romantic</td>
+    <td>ツキヨミ/彩り</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Life goes on</td>
+    <td>Life goes on/We are young </td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>We are young</td>
+    <td>Life goes on/We are young</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Night Drive Groovin'</td>
+    <td>Life goes on/We are young</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>僕のワルツ</td>
+    <td>Life goes on/We are young</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Rainbow</td>
+    <td>Life goes on/We are young</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Sing Your Melody </td>
+    <td>Life goes on/We are young</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>愛を伝えましょう </td>
+    <td>Life goes on/We are young</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>なにもの</td>
+    <td>なにもの</td>
+    <td>ピース</td>
+  </tr>
+  <tr>
+    <td>Magic of Love</td>
+    <td>なにもの</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>Kiss & Kill</td>
+    <td>なにもの</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>アシタノカタチ</td>
+    <td>なにもの</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>名もなきエキストラ </td>
+    <td>なにもの</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>話をしようよ </td>
+    <td>なにもの</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>愛し生きること</td>
+    <td>愛し生きること/MAGIC WORD</td>
+    <td>ピース</td>
+  </tr>
+  <tr>
+    <td>MAGIC WORD</td>
+    <td>愛し生きること/MAGIC WORD</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>1999</td>
+    <td>愛し生きること/MAGIC WORD</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>plan d</td>
+    <td>愛し生きること/MAGIC WORD</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>One Sided Love </td>
+    <td>愛し生きること/MAGIC WORD</td>
+    <td>ー</td>
+  </tr>
+  <tr>
+    <td>僕らのバカンス </td>
+    <td>愛し生きること/MAGIC WORD</td>
+    <td>ー</td>
+  </tr>
+</table>
+
+</body>
+
+<script>
+function myFunctionTitle() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInputTitle");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("songTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 1; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+
+function myFunctionSingle() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInputSingle");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("songTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 1; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+
+function myFunctionAlbum() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInputAlbum");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("songTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 1; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[2];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+
+</html>
