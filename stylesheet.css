@@ -6,3 +6,7 @@ table th, table td {
   border: dashed 1px orange;/**/
   /*破線 1px オレンジ*/
 }
+th {
+  color: #FF9800;/*文字色*/
+  background: #fff5e5;/*背景色*/	
+}
