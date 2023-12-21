@@ -3,23 +3,22 @@
 <body>
 
 <h1>King & Prince</h1>
-<p>serach for songs</p>
+
+<select id="searchTarg">
+    <option value="Title">タイトルで探す</option>
+    <option value="Single">シングルで探す</option>
+    <option value="Album">アルバムで探す</option>
+</select>
+
+<input type="text" id="myInputName" onclick="myFunction()" placeholder="キーワード入力..">
 
 <button type="button" onclick="myFunction()">検索</button>
 
-<select id="searchTarg">
-    <option value="Title">Title</option>
-    <option value="Single">Single</option>
-    <option value="Album">Album</option>
-</select>
-
-<input type="text" id="myInputName" onclick="myFunction()" placeholder="Search for Names..">
-
 <table id="songTable">
   <tr>
-    <th>Title</th>
-    <th>Single</th>
-    <th>Album</th>
+    <th>タイトル</th>
+    <th>シングル</th>
+    <th>アルバム</th>
   </tr>
   <tr>
     <td>シンデレラガール</td>
